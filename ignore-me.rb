@@ -5,20 +5,20 @@
 class IgnoreMe < Formula
   desc "A smart and beautiful CLI tool for .gitignore generation"
   homepage "https://github.com/erdemkosk/ignore-me"
-  version "1.0.1"
+  version "1.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/erdemkosk/ignore-me/releases/download/v1.0.1/ignore-me_Darwin_x86_64.tar.gz"
-      sha256 "ce16183fd43311877e96a04d1f25d180d28793af119e6d72fca4e2d78bbccd31"
+      url "https://github.com/erdemkosk/ignore-me/releases/download/v1.0.2/ignore-me_Darwin_x86_64.tar.gz"
+      sha256 "688cf07a277439f7073acb1a99f06152ea688785a23741fb2eea72850e943214"
 
       def install
         bin.install "ignore-me"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/erdemkosk/ignore-me/releases/download/v1.0.1/ignore-me_Darwin_arm64.tar.gz"
-      sha256 "a6b3177242e72dc7c3850f6f3eab50f3f19d10d452cc194910ddc290c73d29d8"
+      url "https://github.com/erdemkosk/ignore-me/releases/download/v1.0.2/ignore-me_Darwin_arm64.tar.gz"
+      sha256 "e4d44a6bae66cc3c94cac69928d4df60eb6830e5848734a688d2bb50f1075a88"
 
       def install
         bin.install "ignore-me"
@@ -29,8 +29,8 @@ class IgnoreMe < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/erdemkosk/ignore-me/releases/download/v1.0.1/ignore-me_Linux_x86_64.tar.gz"
-        sha256 "76f843d9820f345a6dde78d712c6c99da187ac01f95af2b2e374b01dff7330c2"
+        url "https://github.com/erdemkosk/ignore-me/releases/download/v1.0.2/ignore-me_Linux_x86_64.tar.gz"
+        sha256 "cce715b29a5675e2ef4c9f8280028f671f67dd95a1954632e6437647d6217d8b"
 
         def install
           bin.install "ignore-me"
@@ -39,8 +39,8 @@ class IgnoreMe < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/erdemkosk/ignore-me/releases/download/v1.0.1/ignore-me_Linux_arm64.tar.gz"
-        sha256 "f0e2c1bee4546aff1765fe32ad70c0831382721eeebc097ae2309101f1415c35"
+        url "https://github.com/erdemkosk/ignore-me/releases/download/v1.0.2/ignore-me_Linux_arm64.tar.gz"
+        sha256 "fa77d3daf1f90fb7140cda004e3397f62269d6eda1d16fce7a091308afde6136"
 
         def install
           bin.install "ignore-me"
